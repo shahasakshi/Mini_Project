@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="./calc.css">
-        <script src="./calc.js"></script>
-        </head>
-        <body>
-            <h1 style="text-align:center">Calculator</h1>
-            <div class="box">
-                <table >
+
+<head>
+    <link rel="stylesheet" href="./calc.css">
+    <script src="./calc.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align:center">Calculator</h1>
+    <div class="box">
+        <table>
+            <tr>
+                <td> <input type="text" name="disp" id="disp" placeholder="calculator"></td>
+                <td><button type="button" name="reset" id="reset" onclick="Reset()">Reset</td>
+            </tr>
+        </table>
+
+        <table>
+            <div class="keys">
                 <tr>
-                    <td> <input type="text" name="disp" id="disp" placeholder="calculator"></td>
-                    <td><button type="button" name="reset" id="reset" onclick="Reset()">Reset</td>
-                </tr>
-                </table>
-                
-                <table>
-                    <div class="keys">
-                <tr>
-                    <td><button type ="button"  name="one" class="btn" onclick="display('1')">1</button></td>
-                    <td><button type ="button"  name="two" class="btn" onclick="display('2')">2</button></td>
-                    <td><button type ="button"  name="three" class="btn" onclick="display('3')">3</button></td>
-                    <td><button type ="button"  name="three" class="oper" onclick="display('+')">+</button></td>
+                    <td><button type="button" name="one" class="btn" onclick="display('1')">1</button></td>
+                    <td><button type="button" name="two" class="btn" onclick="display('2')">2</button></td>
+                    <td><button type="button" name="three" class="btn" onclick="display('3')">3</button></td>
+                    <td><button type="button" name="three" class="oper" onclick="display('+')">+</button></td>
 
                 </tr>
 
                 <tr>
-                    <td><button type ="button"  name="four" class="btn" onclick="display('4')">4</button></td>
-                    <td><button type ="button"  name="five" class="btn" onclick="display('5')">5</button></td>
-                    <td><button type ="button"  name="six" class="btn" onclick="display('6')">6</button></td>
-                    <td><button type ="button"  name="sub" class="oper" onclick="display('-')">-</button></td>
+                    <td><button type="button" name="four" class="btn" onclick="display('4')">4</button></td>
+                    <td><button type="button" name="five" class="btn" onclick="display('5')">5</button></td>
+                    <td><button type="button" name="six" class="btn" onclick="display('6')">6</button></td>
+                    <td><button type="button" name="sub" class="oper" onclick="display('-')">-</button></td>
 
-                </tr>
-                
-                <tr>
-                    <td><button type ="button"  name="seven" class="btn" onclick="display('7')">7</button></td>
-                    <td><button type ="button"  name="eight" class="btn" onclick="display('8')">8</button></td>
-                    <td><button type ="button"  name="nine" class="btn" onclick="display('9')">9</button></td>
-                    <td><button type ="button"  name="mul" class="oper" onclick="display('*')">*</button></td>
                 </tr>
 
                 <tr>
-                    <td><button type ="button"  name="eual" class="calculate" onclick="calculate()">=</button></td>
-                    <td><button type ="button"  name="zero" class="btn" onclick="display('0')">0</button></td>
-                    <td><button type ="button"  name="dot" class="oper" onclick="display('.')">.</button></td>
-                    <td><button type ="button"  name="div" class="oper" onclick="display('/')">/</button></td>
+                    <td><button type="button" name="seven" class="btn" onclick="display('7')">7</button></td>
+                    <td><button type="button" name="eight" class="btn" onclick="display('8')">8</button></td>
+                    <td><button type="button" name="nine" class="btn" onclick="display('9')">9</button></td>
+                    <td><button type="button" name="mul" class="oper" onclick="display('*')">*</button></td>
                 </tr>
-                    </table>
 
-        </div>
+                <tr>
+                    <td><button type="button" name="eual" class="calculate" onclick="calculate()">=</button></td>
+                    <td><button type="button" name="zero" class="btn" onclick="display('0')">0</button></td>
+                    <td><button type="button" name="dot" class="oper" onclick="display('.')">.</button></td>
+                    <td><button type="button" name="div" class="oper" onclick="display('/')">/</button></td>
+                </tr>
+        </table>
+
     </div>
-        </body>
-    
+    </div>
+</body>
+
 </html>
